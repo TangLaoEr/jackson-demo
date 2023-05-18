@@ -11,5 +11,6 @@ public class PersonRawValue {
     public long   personId = 0;
 
     @JsonRawValue
+    // public String address  = "{ \"street\" : \"Wall Street\", \"no\":1}";
     public String address  = "{ \"street\" : \"Wall Street\", \"no\":1}";
 }

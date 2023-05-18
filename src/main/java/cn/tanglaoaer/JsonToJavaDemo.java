@@ -54,6 +54,10 @@ public class JsonToJavaDemo {
         System.out.println(car);
     }
 
+    /**
+     * JSON文件->Java对象
+     * @throws IOException
+     */
     @Test
     public void fileToClass() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -62,6 +66,10 @@ public class JsonToJavaDemo {
         System.out.println(car);
     }
 
+    /**
+     * JSON文件->Java对象
+     * @throws IOException
+     */
     @Test
     public void urlToClass() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -70,8 +78,12 @@ public class JsonToJavaDemo {
         System.out.println(car);
     }
 
+    /**
+     * JSON字节输入流-->Java对象
+     * @throws IOException
+     */
     @Test
-    public void streamToClass() throws IOException {
+    public void fileInputStreamToClass() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
 
         InputStream input = new FileInputStream("data/car.json");
@@ -80,6 +92,10 @@ public class JsonToJavaDemo {
         System.out.println(car);
     }
 
+    /**
+     * JSON二进制数组
+     * @throws IOException
+     */
     @Test
     public void byteToClass() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
